@@ -1,9 +1,15 @@
 {
   "manifest_version": 3,
   "name": "Copy Page Title",
-  "version": "1.0",
+  "version": "1.1",
   "description": "A simple extension to copy the page title.",
   "permissions": ["activeTab", "clipboardWrite"],
+  "web_accessible_resources": [
+    {
+      "resources": ["getPageTitle.js", "getPageUrl.js"],
+      "matches": ["<all_urls>"]
+    }
+  ],
   "action": {
     "default_popup": "popup.html",
     "default_icon": {

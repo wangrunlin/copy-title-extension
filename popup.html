@@ -1,25 +1,64 @@
 <!DOCTYPE html>
 <html>
+
 <head>
+  <meta charset="UTF-8">
   <title>Copy Page Title</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      padding: 10px;
-      width: 200px;
+      font-family: sans-serif;
+      padding: 15px;
+      width: 250px;
+      background-color: #f0f0f0;
     }
+
+    h2 {
+      font-size: 18px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
     button {
       padding: 10px;
-      font-size: 16px;
+      font-size: 14px;
       width: 100%;
-      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background-color: #4CAF50;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
-<body>
-  <h2>Copy Page Title</h2>
-  <button id="copyBtn">Copy Title</button>
 
+<body>
+  <h2>复制页面标题</h2>
+  <div class="button-group">
+    <button id="copyBtn">复制标题</button>
+  </div>
+
+  <h2>复制页面标题和 URL</h2>
+  <div class="button-group">
+    <button id="copyAllBtn">复制标题和 URL</button>
+    <button id="copyMdBtn">复制为 Markdown 格式</button>
+  </div>
+
+  <script src="getPageTitle.js"></script>
+  <script src="getPageUrl.js"></script>
   <script src="popup.js"></script>
 </body>
+
 </html>
