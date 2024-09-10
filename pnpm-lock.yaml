@@ -1,0 +1,23 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    devDependencies:
+      chrome-webstore-upload:
+        specifier: ^3.1.1
+        version: 3.1.1
+
+packages:
+
+  chrome-webstore-upload@3.1.1:
+    resolution: {integrity: sha512-nVINbEn51+4pGg0SU5tnkF7+ydY9Llcd++Wbq0TudzRDBlZFBdHOQnoHLTPzke30wvMD733UiIyxNmP5Wtzqeg==}
+    engines: {node: '>=18'}
+
+snapshots:
+
+  chrome-webstore-upload@3.1.1: {}

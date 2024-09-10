@@ -1,0 +1,30 @@
+{
+  "name": "copy-title-extension",
+  "version": "1.1.0",
+  "description": "A simple extension to copy the page title and url.",
+  "type": "module",
+  "scripts": {
+    "build": "zip -r build/copy-title-extension.zip src",
+    "publish": "node --env-file .env scripts/publish.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wangrunlin/copy-title-extension.git"
+  },
+  "keywords": [
+    "Chrome",
+    "Extension",
+    "Copy",
+    "Title"
+  ],
+  "author": "Leo Wang",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/wangrunlin/copy-title-extension/issues"
+  },
+  "homepage": "https://github.com/wangrunlin/copy-title-extension#readme",
+  "devDependencies": {
+    "chrome-webstore-upload": "^3.1.1"
+  }
+}
